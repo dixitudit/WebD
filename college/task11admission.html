@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="manit.png">
+    <title>MANIT</title>
+    <style>
+        #submit{
+            cursor: pointer;
+            padding: 15px; 
+            border-radius: 10px; 
+            border-color: rgb(0, 0, 0);
+            border-width: 1px;
+            margin-left: 200px; 
+            margin-top:2%; 
+            background-color:rgba(173, 216, 230, 0.450);
+        }
+        table , th, td{
+            width: 80%; 
+        }
+        #reset{
+            cursor: pointer;
+            padding: 15px; 
+            border-radius: 10px;
+            border-color: rgb(0, 0, 0);
+            border-width: 1px;
+            margin-left: 43%; 
+            margin-top:2%; 
+            margin-bottom: 10px; 
+            background-color:rgba(173, 216, 230, 0.450); 
+        }
+        a:link {
+            text-decoration: none;
+            color: black;
+        }
+        a:hover {
+            text-decoration: none;
+            background-color: rgba(255, 0, 0, 0.679);
+            border-radius: 20px;
+            
+            
+            transition: all .6s ease;
+        }
+        a:visited {
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+        }
+    </style>
+</head>
+<body background="manit.png" style="background-color: rgb(53, 53, 247); background-size: cover; overflow-x: hidden; background-repeat: no-repeat; background-attachment: fixed; background-size:40%; background-position: center; padding-left: 10%; padding-right: 10%;">
+
+
+    <div style="background-color: darkblue; opacity: 0.8; position: absolute; top: 0px; left:0px; right: 0px;"><img src="firstLogo.png" style="width:40%; margin: 0px; padding-left: 10%; padding-right: 10%;"></div>
+    <nav style="margin-top: 11%; padding: 12px;padding-left: 10%;padding-right: 10%; background-color: rgba(173, 216, 230, 0.444); border-radius: 20px;">
+        <a href="task11home.html" style="padding: 10px 30px 10px 30px; font-family:'Courier New', Courier, monospace; font-weight: 1000;">Home</a>
+        <a href="task11academics.html" style="padding: 10px 30px 10px 30px; font-family:'Courier New', Courier, monospace; font-weight: 1000;">Academics</a>
+        <a href="task11admission.html" style="padding: 10px 30px 10px 30px; font-family:'Courier New', Courier, monospace; font-weight: 1000;background-color: rgba(255, 59, 48, 0.679);
+        border-radius: 20px;">Admission</a>
+        <a href="task11gallery.html" style="padding: 10px 30px 10px 30px; font-family:'Courier New', Courier, monospace; font-weight: 1000;">Gallery</a>
+    </nav>
+
+
+    <div style=" background-color: rgba(173, 216, 230, 0.222); border-radius: 20px;"><p style="font-family:'Courier New', Courier, monospace; font-size: larger; font-weight: 1000; padding: 10px; margin: 10px;">Admission Form</p>
+    <hr>
+    <form style=" background-color: rgba(173, 216, 230, 0.222); border-radius: 20px;">
+        
+        <h2 style="padding-left: 7%;">Personal Details</h2>
+        <hr style="margin-left: 7%; margin-right:7%;">
+        <table>     
+        <tr><td><label style="padding: 5px 30% 5px 10%; font-size: larger;">Full Name:</label></td>
+        <td><input type="text" style="background-color:rgba(173, 216, 230, 0.450) ; padding: 8px; border-radius: 10px;  margin: 2px;"></td>
+        </tr>
+        
+        <tr><td><label style="padding: 5px 30% 5px 10%; font-size: larger;">Father's Name:</label></td>
+        <td><input type="text" style="background-color:rgba(173, 216, 230, 0.450) ; padding: 8px; border-radius: 10px; margin: 2px;"></td></tr>
+        <tr>
+        <td>
+            <label style="padding: 5px 30% 5px 10%; font-size: larger;">Gender:</label></td>
+
+        <td><div style="background-color:rgba(173, 216, 230, 0.450) ; padding: 8px; border-radius: 10px; margin: 2px; width:60px; display: inline-block;" >
+            <input type="radio" value="Male" name="gender"><label>Male</label>
+        </div>
+        <div style="background-color:rgba(173, 216, 230, 0.450) ; padding: 8px; border-radius: 10px; margin: 2px; width:80px; display: inline-block;" >
+            <input type="radio" name="gender" value="Female"><label>Female</label>
+        </div>
+        <div style="background-color:rgba(173, 216, 230, 0.450) ; padding: 8px; border-radius: 10px; margin: 2px; width:80px; display: inline-block;" >
+            <input type="radio" name="gender" value="Other"><label>Other</label>
+        </div></td>
+    </tr>
+
+        <tr>
+        <td><label style="padding: 5px 30% 5px 10%; font-size: larger;">Document:</label></td>
+        <td><select style="background-color:rgba(173, 216, 230, 0.444) ;  padding: 8px; border-radius: 10px; margin: 2px;">
+            <option>Select</option>
+            <option>Aadhar Card</option>
+            <option>Pan Card</option>
+            <option>Driving Licence</option>
+        </select></td>
+        </tr>
+        <tr>
+        <td><label style="padding: 5px 30% 5px 10%; font-size: larger;">Document Number:</label></td>
+        <td><input type="number" style="background-color:rgba(173, 216, 230, 0.450) ; padding: 8px; border-radius: 10px; margin: 2px;"></td>
+        </tr>
+        <tr>
+        <td><label style="padding: 5px 30% 5px 10%; font-size: larger;">Mobile Number:</label></td>
+        <td><input type="number" style="background-color:rgba(173, 216, 230, 0.450) ; padding: 8px; border-radius: 10px; margin: 2px;"></td></tr>
+        <tr>
+        <td><label style="padding: 5px 30% 5px 10%; font-size: larger;">Email ID:</label></td>
+        <td><input type="email" style="background-color:rgba(173, 216, 230, 0.450) ; padding: 8px; border-radius: 10px; margin: 2px;"></td>
+        </tr>
+        <tr>
+        <td><label style="padding: 5px 30% 5px 10%; font-size: larger;">Course Type:</label></td>
+        <td><select style="background-color:rgba(173, 216, 230, 0.450) ; padding: 8px; border-radius: 10px; margin: 2px;">
+        <option>Select</option>
+        <option>UG</option>
+        <option>PG</option>
+        <option>PH.D.</option>
+        </td></tr>
+        <tr>
+            <td><label style="padding: 5px 30% 5px 10%; font-size: larger;">Department:</label></td>
+            <td><input type="text" style="background-color:rgba(173, 216, 230, 0.450) ; padding: 8px; border-radius: 10px; margin: 2px;"></td>
+        </tr>
+        <tr>
+            <td><label style="padding: 5px 30% 5px 10%; font-size: larger;">Course Name:</label></td>
+            <td><input type="text" style="background-color:rgba(173, 216, 230, 0.450) ; padding: 8px; border-radius: 10px; margin: 2px;"></td>
+        </tr>
+
+
+    </table>
+        <button type="reset"  id="reset" class="button">Reset</button>
+        
+        <button type="submit" id="submit" class="button" >Submit</button>
+
+    </form>
+    
+
+    </div>
+</body>
+</html>

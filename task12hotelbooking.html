@@ -12,21 +12,26 @@
             color: black;
         }
         #submit{
+            cursor: pointer;
             padding: 15px; 
             border-radius: 10px; 
             border-color: rgb(0, 0, 0);
             border-width: 1px;
             margin-left: 200px; 
-            margin-top:4px; 
+            margin-top:2%; 
             background-color:rgba(173, 216, 230, 0.450);
         }
+        table , th, td{
+            width: 80%; 
+        }
         #reset{
+            cursor: pointer;
             padding: 15px; 
             border-radius: 10px;
             border-color: rgb(0, 0, 0);
             border-width: 1px;
-            margin-left: 300px; 
-            margin-top:4px; 
+            margin-left: 43%; 
+            margin-top:2%; 
             margin-bottom: 10px; 
             background-color:rgba(173, 216, 230, 0.450); 
         }
@@ -46,7 +51,7 @@
     </style>
 </head>
 <body background="img knp/knp.jpg" style="background-size: cover; overflow-x: hidden; background-repeat: no-repeat; background-attachment: fixed;">
-    <div ><img src="img knp\kanpur.png" style="width:7%; float:left; margin-top: 20px;"> <p style="font-family: cursive; font-size: 80px; margin: 0px;">Kanpur</p><p style="font-family:'Times New Roman', Times, serif ; margin: 0px; padding-left: 135px; font-weight: 500; font-size: 20px;">Manchester of the East</p></div>
+    <div ><img src="img knp\kanpur.png" style="width:9%; float:left; margin-top: 20px;"> <p style="font-family: cursive; font-size: 80px; margin: 0px;">Kanpur</p><p style="font-family:'Times New Roman', Times, serif ; margin: 0px; padding-left: 135px; font-weight: 500; font-size: 20px;">Manchester of the East</p></div>
    <br><br> <nav style="margin-top: 10px; padding: 12px; background-color: rgba(173, 216, 230, 0.444); border-radius: 20px;">
         <a href="task12home.html" style="padding: 10px 30px 10px 30px; font-family:'Courier New', Courier, monospace; font-weight: 1000;">Home</a>
         <a href="task12heritage.html" style="padding: 10px 30px 10px 30px; font-family:'Courier New', Courier, monospace; font-weight: 1000;">Heritage</a>
@@ -58,51 +63,82 @@
 
 
     <form style=" background-color: rgba(173, 216, 230, 0.222); border-radius: 20px;">
-        <h1 style="padding-left: 100px;">Hotel Booking</h1>
-        <hr style="margin-left: 100px; margin-right:100px;">
-        <br>
-        <label style="padding: 5px 500px 5px 100px; font-size: larger">City:</label>
-        <select style="background-color:rgba(173, 216, 230, 0.444) ; padding: 8px; border-radius: 10px; margin: 2px; border: 0px;"><option>Select</option><option>Kanpur</option></select>
-        <br>
-        <label style="padding: 5px 431px 5px 100px; font-size: larger;">Select Hotels:</label>
-        <select style="background-color:rgba(173, 216, 230, 0.444) ; padding: 8px; border-radius: 10px;margin: 2px; border: 0px;"><option>Select</option><option>Hotel 1</option><option>Hotel 2</option><option>Hotel 3</option></select>
-        <br>
-        <label style="padding: 5px 426px 5px 100px; font-size: larger;">Check in Date:</label>
-        <input type="date" style="background-color:rgba(173, 216, 230, 0.444) ; padding: 8px; border-radius: 10px; border: 0px;margin: 2px;">
-        <br>
-        <label style="padding: 5px 418px 5px 100px; font-size: larger;">Check out Date:</label>
-        <input type="date" style="background-color:rgba(173, 216, 230, 0.444) ; padding: 8px; border-radius: 10px; border: 0px;margin: 2px;">
-        <br>
-        <label style="padding: 5px 448px 5px 100px; font-size: larger;">Room Type:</label>
-        <select style="background-color:rgba(173, 216, 230, 0.444) ; padding: 8px; border-radius: 10px; border: 0px; margin: 2px;"><option>Select</option><option>Single Bed-AC</option><option>Single Bed-Non AC</option><option>Double Bed-AC</option><option>Double Bed-Non AC</option></select>
-        <br>
-        <h2 style="padding-left: 100px;">Personal Details</h2>
-        <hr style="margin-left: 100px; margin-right:100px;">
-        <br>
-        <label style="padding: 5px 454px 5px 100px; font-size: larger;">Full Name:</label>
-        <input type="text" style="background-color:rgba(173, 216, 230, 0.450) ; padding: 8px; border-radius: 10px; border: 0px;margin: 2px;">
-        <br>
-        <label style="padding: 5px 427px 5px 100px; font-size: larger;">Father's Name:</label>
-        <input type="text" style="background-color:rgba(173, 216, 230, 0.450) ; padding: 8px; border-radius: 10px; border: 0px;margin: 2px;">
-        <br>
-        <label style="padding: 5px 480px 5px 100px; font-size: larger;">Gender:</label>
-        <div style="background-color:rgba(173, 216, 230, 0.450) ; padding: 8px; border-radius: 10px; border: 0px;margin: 2px; width:60px; display: inline-block;" ><input type="radio" value="Male" name="gender"><label>Male</label></div>
+        <h1 style="padding-left: 7%;">Hotel Booking</h1>
+        <hr style="margin-left: 7%; margin-right:7%;">
+        <table >
+        <tr>
+        <td><label style="padding: 5px 30% 5px 10%; font-size: larger">City:</label></td>
+        <td><select style="background-color:rgba(173, 216, 230, 0.444) ; padding: 8px; border-radius: 10px; margin: 2px; border: 0px;">
+            <option>Select</option>
+            <option>Kanpur</option>
+        </select></td>
+        </tr>
+        <tr>
+        <td><label style="padding: 5px 30% 5px 10%; font-size: larger;">Select Hotels:</label></td>
+        <td><select style="background-color:rgba(173, 216, 230, 0.444) ; padding: 8px; border-radius: 10px;margin: 2px; border: 0px;">
+            <option>Select</option>
+            <option>Hotel 1</option>
+            <option>Hotel 2</option>
+            <option>Hotel 3</option>
+        </select></td></tr>
+        <tr>
+        <td><label style="padding: 5px 30% 5px 10%; font-size: larger;">Check in Date:</label></td>
+        <td><input type="date" style="background-color:rgba(173, 216, 230, 0.444) ; padding: 8px; border-radius: 10px; border: 0px;margin: 2px;"></td>
+        </tr>
+    
+        <tr>
+        <td><label style="padding: 5px 30% 5px 10%; font-size: larger;">Check out Date:</label></td>
+        <td><input type="date" style="background-color:rgba(173, 216, 230, 0.444) ; padding: 8px; border-radius: 10px; border: 0px;margin: 2px;"></td>
+        </tr>
+        <tr>
+        <td><label style="padding: 5px 30% 5px 10%; font-size: larger;">Room Type:</label></td>
+        <td><select style="background-color:rgba(173, 216, 230, 0.444) ; padding: 8px; border-radius: 10px; border: 0px; margin: 2px;">
+            <option>Select</option>
+            <option>Single Bed-AC</option>
+            <option>Single Bed-Non AC</option>
+            <option>Double Bed-AC</option>
+            <option>Double Bed-Non AC</option>
+        </select></td></tr>
+        </table>
+        
+        <h2 style="padding-left: 7%;">Personal Details</h2>
+        <hr style="margin-left: 7%; margin-right:7%;">
+        <table>     
+        <tr><td><label style="padding: 5px 30% 5px 10%; font-size: larger;">Full Name:</label></td>
+        <td><input type="text" style="background-color:rgba(173, 216, 230, 0.450) ; padding: 8px; border-radius: 10px; border: 0px;margin: 2px;"></td>
+        </tr>
+        
+        <tr><td><label style="padding: 5px 30% 5px 10%; font-size: larger;">Father's Name:</label></td>
+        <td><input type="text" style="background-color:rgba(173, 216, 230, 0.450) ; padding: 8px; border-radius: 10px; border: 0px;margin: 2px;"></td></tr>
+        <tr>
+        <td><label style="padding: 5px 30% 5px 10%; font-size: larger;">Gender:</label></td>
+        <td><div style="background-color:rgba(173, 216, 230, 0.450) ; padding: 8px; border-radius: 10px; border: 0px;margin: 2px; width:60px; display: inline-block;" ><input type="radio" value="Male" name="gender"><label>Male</label></div>
         <div style="background-color:rgba(173, 216, 230, 0.450) ; padding: 8px; border-radius: 10px; border: 0px;margin: 2px; width:80px; display: inline-block;" ><input type="radio" name="gender" value="Female"><label>Female</label></div>
-        <div style="background-color:rgba(173, 216, 230, 0.450) ; padding: 8px; border-radius: 10px; border: 0px;margin: 2px; width:80px; display: inline-block;" ><input type="radio" name="gender" value="Other"><label>Other</label></div>
+        <div style="background-color:rgba(173, 216, 230, 0.450) ; padding: 8px; border-radius: 10px; border: 0px;margin: 2px; width:80px; display: inline-block;" ><input type="radio" name="gender" value="Other"><label>Other</label></div></td>
+    </tr>
 
-        <br>
-        <label style="padding: 5px 456px 5px 100px; font-size: larger;">Document:</label>
-        <select style="background-color:rgba(173, 216, 230, 0.444) ; padding: 8px; border-radius: 10px; margin: 2px;"><option>Select</option><option>Aadhar Card</option><option>Pan Card</option><option>Driving Licence</option></select>
-        <br>
-        <label style="padding: 5px 388px 5px 100px; font-size: larger;">Document Number:</label>
-        <input type="number" style="background-color:rgba(173, 216, 230, 0.450) ; padding: 8px; border-radius: 10px; border: 0px;margin: 2px;">
-        <br>
-        <label style="padding: 5px 413px 5px 100px; font-size: larger;">Mobile Number:</label>
-        <input type="number" style="background-color:rgba(173, 216, 230, 0.450) ; padding: 8px; border-radius: 10px; border: 0px;margin: 2px;">
-        <br>
-        <label style="padding: 5px 466px 5px 100px; font-size: larger;">Email ID:</label>
-        <input type="email" style="background-color:rgba(173, 216, 230, 0.450) ; padding: 8px; border-radius: 10px; border: 0px;margin: 2px;">
-        <br>
+        <tr>
+        <td><label style="padding: 5px 30% 5px 10%; font-size: larger;">Document:</label></td>
+        <td><select style="background-color:rgba(173, 216, 230, 0.444) ; padding: 8px; border-radius: 10px; margin: 2px;">
+            <option>Select</option>
+            <option>Aadhar Card</option>
+            <option>Pan Card</option>
+            <option>Driving Licence</option>
+        </select></td>
+        </tr>
+        <tr>
+        <td><label style="padding: 5px 30% 5px 10%; font-size: larger;">Document Number:</label></td>
+        <td><input type="number" style="background-color:rgba(173, 216, 230, 0.450) ; padding: 8px; border-radius: 10px; border: 0px;margin: 2px;"></td>
+        </tr>
+        <tr>
+        <td><label style="padding: 5px 30% 5px 10%; font-size: larger;">Mobile Number:</label></td>
+        <td><input type="number" style="background-color:rgba(173, 216, 230, 0.450) ; padding: 8px; border-radius: 10px; border: 0px;margin: 2px;"></td></tr>
+        <tr>
+        <td><label style="padding: 5px 30% 5px 10%; font-size: larger;">Email ID:</label></td>
+        <td><input type="email" style="background-color:rgba(173, 216, 230, 0.450) ; padding: 8px; border-radius: 10px; border: 0px;margin: 2px;"></td>
+        </tr>
+        
+    </table>
         <button type="reset"  id="reset" class="button">Reset</button>
         
         <button type="submit" id="submit" class="button" >Submit</button>

@@ -1,0 +1,33 @@
+pipeline {
+    agent any
+
+    stages {
+        //bat
+
+        stage('command') {
+            steps {
+                bat 'java -version'
+                bat 'cd'
+            }
+        }
+        stage('command2') {
+            steps {
+                bat '''
+                    cal 2023
+                    cd
+                    tree
+                '''
+            }
+        }
+        stage('Deploy-on-test') {
+            steps {
+                echo 'deploy test'
+            }
+        }
+        stage('Deploy-on-prod') {
+            steps {
+                echo 'deploy prod'
+            }
+        }
+    }
+}

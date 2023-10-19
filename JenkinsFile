@@ -2,31 +2,23 @@ pipeline {
     agent any
 
     stages {
-        //bat
+        stage('Checkout') {
+            steps {
+                // Checkout the code from the GitHub repository
+                checkout([$class: 'GitSCM', branches: [[name: '*/master']], userRemoteConfigs: [[url: 'https://github.com/dixitudit/WebD.git']]])
+            }
+        }
 
-        stage('command') {
+        stage('Deploy to Azure VM') {
             steps {
-                bat 'java -version'
-                bat 'cd'
-            }
-        }
-        stage('command2') {
-            steps {
-                bat '''
-                    cal 2023
-                    cd
-                    tree
-                '''
-            }
-        }
-        stage('Deploy-on-test') {
-            steps {
-                echo 'deploy test'
-            }
-        }
-        stage('Deploy-on-prod') {
-            steps {
-                echo 'deploy prod'
+                script {
+                    // Copy the index.html to your Azure VM via SSH
+                    sshagent(credentials: ['your-ssh-credentials-id']) {
+                        sh '''
+                            scp -i /path/to/your/ssh/key your-repo/index.html username@your-vm-ip:/path/to/destination/
+                        '''
+                    }
+                }
             }
         }
     }

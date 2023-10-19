@@ -13,9 +13,9 @@ pipeline {
             steps {
                 script {
                     // Copy the index.html to your Azure VM via SSH
-                    sshagent(credentials: ['your-ssh-credentials-id']) {
+                    sshagent(credentials: ['ssh-credentials']) {
                         sh '''
-                            scp -i /path/to/your/ssh/key your-repo/index.html username@your-vm-ip:/path/to/destination/
+                            scp -i /home/azureuser/.ssh/id_rsa home/azureuser/project/index.html azureuser@52.172.236.5:/var/www/html
                         '''
                     }
                 }

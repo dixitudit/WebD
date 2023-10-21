@@ -1,135 +1,286 @@
-<!DOCTYPE HTML>
-<HTML>
+<!DOCTYPE html>
+<html>
   <head>
     <title>HTML Assignment</title>
-    <link rel="icon" href="manit.png">
+    <link rel="icon" href="manit.png" />
     <style>
-        a:link {
-            text-decoration: none;
-            color: black;
-        }
+      @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+      * {
+        font-family: poppins, sans-serif;
+        font-size: 18px;
+      }
+      li {
+        margin-top: 12px;
+      }
+      a:link {
+        text-decoration: none;
+        color: black;
+      }
 
-        a:visited {
-            text-decoration: none;
-            color: rgb(41, 19, 41);
-        }
+      a:visited {
+        text-decoration: none;
+        color: rgb(41, 19, 41);
+      }
 
-        a:hover {
-            text-decoration: none;
-            color:darkblue;
-            font-size: 26px;
-            font-weight: 1000;
-            transition: all .6s ease;
-        }
+      a:hover {
+        text-decoration: none;
+        color: darkblue;
+        font-size: 26px;
+        font-weight: 1000;
+        transition: all 0.6s ease;
+      }
 
-        a:active {
-            text-decoration: none;
-            color:aqua;
-        }
+      a:active {
+        text-decoration: none;
+        color: aqua;
+      }
     </style>
   </head>
-  <body background="cover.png" style="background-size:cover; background-attachment: fixed;">
-    <div id="mainhead" ><h1 style = "text-align: center; border: 2px solid; margin: 0px; padding: 1.5%; font-size: 50px;">WEB DEVELOPMENT</h1></div>
-    <hr>
-    <div id="questions" style="font-size:25px;">
-        <ol>
-            <a href="task1.html" target="_blank"><div id="ques1"><li>Create a static webpage using table tags of HTML.</li></div></a>
-            <a href="task2.html" target="_blank"><div id="ques2"><li>Create a static web page which defines all text formatting tags of HTML in tabular format.</li></div></a>
-            <a href="task3.html" target="_blank"><div id="ques3"><li>Create a webpage using list tags of HTML</li></div></a>
-            <a href="task4.html" target="_blank"><div id="ques4"><li>Create webpage to include image using HTML tag.</li></div></a>
-            <a href="task5.html" target="_blank"><div id="ques5"><li>Create employee registration webpage using HTML form objects.</li></div></a>
-            <a href="#" target="_blank"><div id="ques6"><li>Create an HTML file (e.g. first_page.html) that specifies a page that contains a heading and two
-                paragraphs of text. Use the HTML tags &lt;h1&gt;, &lt;/h1&gt;, &lt;p&gt; and &lt;/p&gt; in this exercise. As the texts in the
-                heading and paragraphs you can use any texts you like. <br>
-                <ul id="ul1" style="list-style-type:disc">
-                    <li>Add an unordered list to this web page. An unordered list should look like the following when
-                        it is shown by a browser:<br>
-                        <ul id="ul2">
-                            <li>An unordered list can be specified with the tags &lt;ul&gt; and &lt;/ul&gt;.</li>
-                            <li>An unordered list typically contains a number of list items that can be specified
-                                with tags &lt;li&gt; and &lt;/li&gt;.</li>
-                            <li>After you have created your unordered list, check out what happens when you
-                                convert it to an ordered list by replacing the tags &lt;ul&gt; and &lt;/ul&gt; with &lt;ol&gt; and
-                                &lt;/ol&gt;, respectively.</li>
-                        </ul>
+  <body
+    background="cover.png"
+    style="background-size: cover; background-attachment: fixed"
+    loading="lazy"
+  >
+    <div id="mainhead">
+      <h1
+        style="
+          text-align: center;
+          border: 2px solid;
+          margin: 0px;
+          padding: 1.5%;
+          font-size: 50px;
+        "
+      >
+        WEB DEVELOPMENT
+      </h1>
+    </div>
+    <hr />
+    <div id="questions" style="font-size: 25px">
+      <ol>
+        <a href="task1.html" target="_blank"
+          ><div id="ques1">
+            <li>Create a static webpage using table tags of HTML.</li>
+          </div></a
+        >
+        <a href="task2.html" target="_blank"
+          ><div id="ques2">
+            <li>
+              Create a static web page which defines all text formatting tags of
+              HTML in tabular format.
+            </li>
+          </div></a
+        >
+        <a href="task3.html" target="_blank"
+          ><div id="ques3">
+            <li>Create a webpage using list tags of HTML</li>
+          </div></a
+        >
+        <a href="task4.html" target="_blank"
+          ><div id="ques4">
+            <li>Create webpage to include image using HTML tag.</li>
+          </div></a
+        >
+        <a href="task5.html" target="_blank"
+          ><div id="ques5">
+            <li>
+              Create employee registration webpage using HTML form objects.
+            </li>
+          </div></a
+        >
+        <a href="#" target="_blank"
+          ><div id="ques6">
+            <li>
+              Create an HTML file (e.g. first_page.html) that specifies a page
+              that contains a heading and two paragraphs of text. Use the HTML
+              tags &lt;h1&gt;, &lt;/h1&gt;, &lt;p&gt; and &lt;/p&gt; in this
+              exercise. As the texts in the heading and paragraphs you can use
+              any texts you like. <br />
+              <ul id="ul1" style="list-style-type: disc">
+                <li>
+                  Add an unordered list to this web page. An unordered list
+                  should look like the following when it is shown by a
+                  browser:<br />
+                  <ul id="ul2">
+                    <li>
+                      An unordered list can be specified with the tags
+                      &lt;ul&gt; and &lt;/ul&gt;.
                     </li>
-                    <li>Add an image to your web page. In this exercise you must use the <img> tag. As an image, you
-                        can use any .jpg or .png file you find on the Internet.</li>
-                </ul>
-
-            </li></div></a>
-            <a href="#" target="_blank"><div id="ques7"><li>Create another .html file that contains a heading and a couple of paragraphs. You could name this new
-                file another_page.html, and you should place it into the same folder where your first .html is. After
-                you have created the new .html page, add a link to the first page so that the browser will load
-                another_page.html when you click the text Go to the other page. in the first page. You need to use the
-                &lt;a&gt; and &lt;/a&gt; tags in this exercise. Inside the tag &lt;a&gt; you need to use a href attribute that specifies
-                which page will be loaded when the link is clicked.</li></div></a>
-            <a href="#" target="_blank" title="This leads you to another page"><div id="ques8"><li>HTML tags like &lt;a&gt; can have certain attributes. The href attribute is mandatory in the &lt;a&gt; tag.
-                Additionally it is possible to use the title attribute which specifies a text that emerges when the mouse
-                cursor is moved above a link. This kind of text is called a tool tip. Modify the link that you created in
-                the previous exercise so that a tool tip says "This leads you to another page." when the mouse cursor is
-                over the link.</li></div></a>
-            <a href="task9.html" target="_blank"><div id="ques9"><li>It is possible to use a picture (image) as a link. Modify your page so that the picture that is on your
-                page will also serve as a link that leads to another page.</li></div></a>
-            <a href="#" target="_blank"><div id="ques10"><li>Upload your two .html files to a server and test that they work as real internet pages.</li></div></a>
-            <a href="college/task11home.html" target="_blank"><div id="ques11"><li>Design a website for a College. There should be at least 15 web-pages present in the web-site. There
-                should be:<br>
-                <ul id="ul3" style="list-style-type:disc">
-                    <li>One Home page that leads to other pages. The Home page should contain the name of the
-                        college as heading along with the college logo. There should be a tab with the following links:<br>
-                        <ul id="ul4">
-                            <li>Home.</li>
-                            <li>Academics.</li>
-                            <li>Admission.</li>
-                            <li>Gallery.</li>
-                            <li>There should be an appropriate description of the college on the home
-                                page.</li>
-                        </ul>
-
+                    <li>
+                      An unordered list typically contains a number of list
+                      items that can be specified with tags &lt;li&gt; and
+                      &lt;/li&gt;.
                     </li>
-                    <li>One Academics page which contains a list of all the departments present in the college like Arts, Science and Commerce. The list should be a nested list, with available courses mentioned
-                        under each department. There should be a minimum of two courses under each department,
-                        (for e.g. Computer Science and Mathematics under Science, English and Sociology under Arts
-                        and so on). Each Course entry in the list should be a HTML link that leads to a web-page
-                        totally dedicated to the course itself.</li>
-                    <li>Each Course should have its own dedicated web-page. This page should contain a description
-                        about the course, a list of all the teachers taking the course and the timetable for that particular
-                        subject.</li>
-                    <li>The Admission page basically contains a form that a student needs to fill up in order to take
-                        admission in the college. The form should ask all the necessary questions using appropriate
-                        form elements.</li>
-                    <li>One gallery page that contains set of photos taken of the college and its students.</li>
-                </ul>
-                <p>Please note that each web-page in this website should have the same background Image/color.
-                    The looks of each page should be similar.</p>
-            </li></div></a>
-            <a href="task12home.html" target="_blank"><div id="ques12"><li>Design a website for the Tourism Sites of a given City. There should be at least 15 web-pages present
-                in the web-site. There should be:<br>
-                <ul id="ul5" style="list-style-type:disc">
-                    <li>One Home page that leads to other pages. The Home page should contain the name of the City
-                        as heading along with a logo. There should be a tab with the following links:<br>
-                        <ul id="ul6">
-                            <li>Home.</li>
-                            <li>Heritage.</li>
-                            <li>Hotel Booking.</li>
-                            <li>Gallery.</li>
-                        </ul>
+                    <li>
+                      After you have created your unordered list, check out what
+                      happens when you convert it to an ordered list by
+                      replacing the tags &lt;ul&gt; and &lt;/ul&gt; with
+                      &lt;ol&gt; and &lt;/ol&gt;, respectively.
                     </li>
-                    <li>One Heritage page which contains a list of all the Heritage Sites present in the city. The list
-                        should be a list of Pictures. There should be a minimum of ten heritage sites. Each Image entry
-                        in the list should be a HTML link/button that leads to a web-page totally dedicated to the
-                        Heritage Site itself.</li>
-                    <li>Each Heritage Site should have its own dedicated web-page. This page should contain a
-                        description about the site along with its history.</li>
-                    <li>The Hotel booking page basically contains a form that a person needs to fill up in order to stay
-                        in a hotel. The form should ask all the necessary questions using appropriate form elements.</li>
-                    <li>One gallery page that contains set of photos taken of the Heritage Sites throughout the city.</li>
-                </ul>
-                <p>Please note that each web-page in this website should have the same background Image/color.
-                    The looks of each page should be similar.</p>
-                </li></div></a>
-
-        </ol>
+                  </ul>
+                </li>
+                <li>
+                  Add an image to your web page. In this exercise you must use
+                  the <img /> tag. As an image, you can use any .jpg or .png
+                  file you find on the Internet.
+                </li>
+              </ul>
+            </li>
+          </div></a
+        >
+        <a href="#" target="_blank"
+          ><div id="ques7">
+            <li>
+              Create another .html file that contains a heading and a couple of
+              paragraphs. You could name this new file another_page.html, and
+              you should place it into the same folder where your first .html
+              is. After you have created the new .html page, add a link to the
+              first page so that the browser will load another_page.html when
+              you click the text Go to the other page. in the first page. You
+              need to use the &lt;a&gt; and &lt;/a&gt; tags in this exercise.
+              Inside the tag &lt;a&gt; you need to use a href attribute that
+              specifies which page will be loaded when the link is clicked.
+            </li>
+          </div></a
+        >
+        <a href="#" target="_blank" title="This leads you to another page"
+          ><div id="ques8">
+            <li>
+              HTML tags like &lt;a&gt; can have certain attributes. The href
+              attribute is mandatory in the &lt;a&gt; tag. Additionally it is
+              possible to use the title attribute which specifies a text that
+              emerges when the mouse cursor is moved above a link. This kind of
+              text is called a tool tip. Modify the link that you created in the
+              previous exercise so that a tool tip says "This leads you to
+              another page." when the mouse cursor is over the link.
+            </li>
+          </div></a
+        >
+        <a href="task9.html" target="_blank"
+          ><div id="ques9">
+            <li>
+              It is possible to use a picture (image) as a link. Modify your
+              page so that the picture that is on your page will also serve as a
+              link that leads to another page.
+            </li>
+          </div></a
+        >
+        <a href="#" target="_blank"
+          ><div id="ques10">
+            <li>
+              Upload your two .html files to a server and test that they work as
+              real internet pages.
+            </li>
+          </div></a
+        >
+        <a href="college/task11home.html" target="_blank"
+          ><div id="ques11">
+            <li>
+              Design a website for a College. There should be at least 15
+              web-pages present in the web-site. There should be:<br />
+              <ul id="ul3" style="list-style-type: disc">
+                <li>
+                  One Home page that leads to other pages. The Home page should
+                  contain the name of the college as heading along with the
+                  college logo. There should be a tab with the following
+                  links:<br />
+                  <ul id="ul4">
+                    <li>Home.</li>
+                    <li>Academics.</li>
+                    <li>Admission.</li>
+                    <li>Gallery.</li>
+                    <li>
+                      There should be an appropriate description of the college
+                      on the home page.
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  One Academics page which contains a list of all the
+                  departments present in the college like Arts, Science and
+                  Commerce. The list should be a nested list, with available
+                  courses mentioned under each department. There should be a
+                  minimum of two courses under each department, (for e.g.
+                  Computer Science and Mathematics under Science, English and
+                  Sociology under Arts and so on). Each Course entry in the list
+                  should be a HTML link that leads to a web-page totally
+                  dedicated to the course itself.
+                </li>
+                <li>
+                  Each Course should have its own dedicated web-page. This page
+                  should contain a description about the course, a list of all
+                  the teachers taking the course and the timetable for that
+                  particular subject.
+                </li>
+                <li>
+                  The Admission page basically contains a form that a student
+                  needs to fill up in order to take admission in the college.
+                  The form should ask all the necessary questions using
+                  appropriate form elements.
+                </li>
+                <li>
+                  One gallery page that contains set of photos taken of the
+                  college and its students.
+                </li>
+              </ul>
+              <p>
+                Please note that each web-page in this website should have the
+                same background Image/color. The looks of each page should be
+                similar.
+              </p>
+            </li>
+          </div></a
+        >
+        <a href="task12home.html" target="_blank"
+          ><div id="ques12">
+            <li>
+              Design a website for the Tourism Sites of a given City. There
+              should be at least 15 web-pages present in the web-site. There
+              should be:<br />
+              <ul id="ul5" style="list-style-type: disc">
+                <li>
+                  One Home page that leads to other pages. The Home page should
+                  contain the name of the City as heading along with a logo.
+                  There should be a tab with the following links:<br />
+                  <ul id="ul6">
+                    <li>Home.</li>
+                    <li>Heritage.</li>
+                    <li>Hotel Booking.</li>
+                    <li>Gallery.</li>
+                  </ul>
+                </li>
+                <li>
+                  One Heritage page which contains a list of all the Heritage
+                  Sites present in the city. The list should be a list of
+                  Pictures. There should be a minimum of ten heritage sites.
+                  Each Image entry in the list should be a HTML link/button that
+                  leads to a web-page totally dedicated to the Heritage Site
+                  itself.
+                </li>
+                <li>
+                  Each Heritage Site should have its own dedicated web-page.
+                  This page should contain a description about the site along
+                  with its history.
+                </li>
+                <li>
+                  The Hotel booking page basically contains a form that a person
+                  needs to fill up in order to stay in a hotel. The form should
+                  ask all the necessary questions using appropriate form
+                  elements.
+                </li>
+                <li>
+                  One gallery page that contains set of photos taken of the
+                  Heritage Sites throughout the city.
+                </li>
+              </ul>
+              <p>
+                Please note that each web-page in this website should have the
+                same background Image/color. The looks of each page should be
+                similar.
+              </p>
+            </li>
+          </div></a
+        >
+      </ol>
     </div>
   </body>
 </html>

@@ -1,0 +1,33 @@
+pipeline {
+    agent any
+
+    environment {
+        // Define your SSH credentials ID, which you should have configured in Jenkins
+        SSH_CREDENTIALS_ID = 'ssh-credentials'
+        // Define the destination path on your Azure VM where the website should be deployed
+        DESTINATION_PATH = '/var/www/html/mywebsite'
+    }
+
+    stages {
+        stage('Checkout') {
+            steps {
+                // Checkout the code from the GitHub repository
+                checkout scm
+            }
+        }
+
+        stage('Deploy to Azure VM') {
+            steps {
+                script {
+                    // Use SSH credentials to copy the contents to your Azure VM
+                    sshagent(credentials: [SSH_CREDENTIALS_ID]) {
+                        // Use the 'rsync' command to deploy the website
+                        sh """
+                            rsync -avz -e 'ssh -o StrictHostKeyChecking=no' ./* azureuser@20.40.52.126:${DESTINATION_PATH}
+                        """
+                    }
+                }
+            }
+        }
+    }
+}
